@@ -41,7 +41,7 @@ const Contact = () => {
         {mainData ? (
           mainData.map((cruEle) => <MovieCard key={cruEle.id} {...cruEle} />)
         ) : (
-          <p>Loading...</p>
+          <p></p>
         )}
       </div>
     </div>
