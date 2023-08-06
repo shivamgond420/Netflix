@@ -14,7 +14,7 @@ const Herosection = ({ title, description, ImgURL }) => {
             <div className="text-gray-600 text-base md:text-lg mb-4 max-w-md">
               {description}
             </div>
-            <Link href="/movies">
+            <Link href="/movie">
               <button className="mt-4 mb-3 md:mt-8 text-white bg-red-600 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm md:text-base px-5 py-3 md:py-4 text-center">
                 Explore Movies
               </button>
