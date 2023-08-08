@@ -12,7 +12,7 @@ const Contact = () => {
 
   const fetchData = async () => {
     const url =
-      "https://netflix54.p.rapidapi.com/search/?query=stranger&offset=0&limit_titles=50&limit_suggestions=20&lang=en";
+      "https://netflix54.p.rapidapi.com/search/?query=stranger&offset=0&limit_titles=700&limit_suggestions=20&lang=en";
     const options = {
       method: "GET",
       headers: {
@@ -38,11 +38,9 @@ const Contact = () => {
         Series & Movies
       </div>
       <div className="movie-grid p-4 gap-4 grid-cols-2 grid-rows-3">
-        {mainData ? (
+        {mainData &&
           mainData.map((cruEle) => <MovieCard key={cruEle.id} {...cruEle} />)
-        ) : (
-          <p></p>
-        )}
+        }
       </div>
     </div>
   );
